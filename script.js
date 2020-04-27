@@ -41,3 +41,31 @@ firstNumber.value = "";
 secondNumber.value = "";
 });
 
+const multiplyButtonClick = document.querySelector("#multiply");
+multiplyButtonClick.addEventListener("click", function(){
+// consolelog('you clicked muliplication button');
+const firstNumber = document.querySelector('#firstInput');
+const secondNumber = document.querySelector('#secondInput');
+let firstNumberInput = firstNumber.value;
+let secondNumberInput = secondNumber.value;
+let firstNumberInt = parseInt(firstNumberInput);
+let secondNumberInt = parseInt(secondNumberInput);
+document.querySelector("#output").innerHTML = firstNumberInt * secondNumberInt;
+firstNumber.value = "";
+secondNumber.value = "";
+});
+
+const divideButtonClick = document.querySelector("#divide");
+divideButtonClick.addEventListener("click", function(){
+// consolelog('you clicked the division button');
+const firstNumber = document.querySelector('#firstInput');
+const secondNumber = document.querySelector('#secondInput');
+let firstNumberInput = firstNumber.value;
+let secondNumberInput = secondNumber.value;
+let firstNumberInt = parseInt(firstNumberInput);
+let secondNumberInt = parseInt(secondNumberInput);
+document.querySelector("#output").innerHTML = firstNumberInt / secondNumberInt;
+firstNumber.value = "";
+secondNumber.value = "";
+});
+
