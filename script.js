@@ -16,6 +16,10 @@
 const additionButtonClick = document.querySelector("#addition");
 const firstNumber = document.querySelector('#firstInput');
 const secondNumber = document.querySelector('#secondInput');
+const subtractButtonClick = document.querySelector("#subtraction");
+const multiplyButtonClick = document.querySelector("#multiply");
+const divideButtonClick = document.querySelector("#divide");
+
 
 
 additionButtonClick.addEventListener("click", function(){
@@ -26,7 +30,7 @@ firstNumber.value = "";
 secondNumber.value = "";
 });
 
-const subtractButtonClick = document.querySelector("#subtraction");
+
 subtractButtonClick.addEventListener("click", function(){
 let firstNumberInput = firstNumber.value;
 let secondNumberInput = secondNumber.value;
@@ -35,7 +39,7 @@ firstNumber.value = "";
 secondNumber.value = "";
 });
 
-const multiplyButtonClick = document.querySelector("#multiply");
+
 multiplyButtonClick.addEventListener("click", function(){
 let firstNumberInput = firstNumber.value;
 let secondNumberInput = secondNumber.value;
@@ -44,7 +48,7 @@ firstNumber.value = "";
 secondNumber.value = "";
 });
 
-const divideButtonClick = document.querySelector("#divide");
+
 divideButtonClick.addEventListener("click", function(){
 let firstNumberInput = firstNumber.value;
 let secondNumberInput = secondNumber.value;
